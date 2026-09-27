@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+    background-color: lightblue;
+}
+
+.links {
+    display: flex;
+
+    gap: 20px;
+}
+
+.links a {
+    color: black;
+}
+
+.cards {
+    display: flex;
+
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card button {
+    margin-top: auto;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+
+.card:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+.layout {
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    grid-template-rows: 50px 200px 50px;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.grid-header {
+    grid-area: header;
+
+    background-color: lightblue;
+
+    padding: 15px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+    padding: 15px;
+
+    background-color: lightgray;
+}
+
+.main {
+    grid-area: main;
+
+    padding: 15px;
+}
+
+.grid-footer {
+    grid-area: footer;
+
+    background-color: lightblue;
+
+    padding: 15px;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.gallery-item span {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    padding: 5px 0;
+
+    background-color: black;
+    color: white;
+
+    opacity: 0;
+}
+
+
+.gallery-item:hover span {
+    opacity: 1;
+}
+
+
+.portfolio {
+    display: grid;
+
+    grid-template-columns: 1fr 250px;
+
+    gap: 20px;
+}
+
+.projects {
+    padding: 20px;
+
+    border: 1px solid black;
+}
+
+.project {
+    display: flex;
+
+    flex-direction: column;
+
+    border: 1px solid gray;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+}
+
+.info {
+    padding: 20px;
+
+    background-color: lightgray;
+}
+
+.main-footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: lightblue;
+}
